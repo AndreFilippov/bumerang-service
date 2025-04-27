@@ -1,0 +1,73 @@
+<div class="error-alert">
+    <div class="error-alert__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+    </div>
+    <div class="error-alert__content">
+        {{ message }}
+    </div>
+    <button class="error-alert__close" onclick="this.parentElement.style.display='none'">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </button>
+</div>
+
+<style>
+.error-alert {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #f8d7da;
+    border-radius: 0.5rem;
+    background-color: #f8d7da;
+    color: #721c24;
+    display: flex;
+    align-items: center;
+    animation: slideIn 0.3s ease-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.error-alert__icon {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.error-alert__content {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.error-alert__close {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #721c24;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.error-alert__close:hover {
+    opacity: 1;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+</style> 

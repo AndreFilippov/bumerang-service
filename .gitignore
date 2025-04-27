@@ -1,0 +1,55 @@
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.DS_Store
+
+# Composer
+/vendor/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+/database/*.db
+/database/*.sqlite
+
+# Cache and temporary files
+/cache/
+/tmp/
+*.cache
+*.tmp
+
+# Build and deployment
+/build/
+/dist/
+/deploy/
+
+# Dependencies
+/node_modules/
+/bower_components/
+
+# Testing
+/coverage/
+.phpunit.result.cache
+
+# System files
+Thumbs.db
+desktop.ini
+
+# Local configuration
+*.local.php
+*.local.yml
+*.local.yaml
+*.local.json
+
+# Docker
+docker-compose.override.yml 
